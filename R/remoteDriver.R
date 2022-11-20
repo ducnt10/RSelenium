@@ -759,7 +759,7 @@ remoteDriver <-
           "%s/session/%s/window",
           serverURL, sessionInfo[["id"]]
         )
-        if (browserName == "firefox") {
+        if (sessionInfo$browserName == "firefox") {
           qdata <- list(handle = windowId)
         } else {
           qdata <- list(name = windowId)
